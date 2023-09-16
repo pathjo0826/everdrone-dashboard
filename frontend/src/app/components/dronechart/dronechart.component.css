@@ -18,6 +18,7 @@ img {
 
 .text {
     padding-top: 0.5rem;
-    font-size: larger;
+    font-size: medium;
     text-align: center;
+    margin-bottom: 2rem;
 }
