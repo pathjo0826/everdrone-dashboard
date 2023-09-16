@@ -9,6 +9,8 @@ import { WeatherradarComponent } from './components/weatherradar/weatherradar.co
 import { PilotresourcesComponent } from './components/pilotresources/pilotresources.component';
 import { OperationalreportsComponent } from './components/operationalreports/operationalreports.component';
 import { CompanynotamComponent } from './components/companynotam/companynotam.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
+import { EopComponent } from './components/eop/eop.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CompanynotamComponent } from './components/companynotam/companynotam.co
     WeatherradarComponent,
     PilotresourcesComponent,
     OperationalreportsComponent,
-    CompanynotamComponent
+    CompanynotamComponent,
+    ScheduleComponent,
+    EopComponent
   ],
   imports: [
     BrowserModule,
