@@ -1,0 +1,10 @@
+
+.container {
+    margin-top: 5rem;
+}
+
+.resource-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

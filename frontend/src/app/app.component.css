@@ -2,9 +2,3 @@
 .header {
     margin-bottom: 5rem;
 }
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}

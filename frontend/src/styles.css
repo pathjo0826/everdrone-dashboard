@@ -1,1 +1,7 @@
-div {font-family: brandon-grotesque,sans-serif;}
+div {
+    font-family: brandon-grotesque,sans-serif;
+}
+
+.active {
+    background-color: #D3D3D3;
+}

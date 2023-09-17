@@ -1,17 +1,6 @@
 <div>
-  <div class="topbar">
-    <h2 class="header">Everdrone begins</h2>
-  </div>
-  <div class="container">
-    <app-notam></app-notam>
-    <app-dronechart></app-dronechart>
-    <app-weatherradar></app-weatherradar>
-    <app-pilotresources></app-pilotresources>
-  </div>
-  <div class="container">
-    <app-operationalreports></app-operationalreports>
-    <app-companynotam></app-companynotam>
-    <app-schedule></app-schedule>
-    <app-eop></app-eop>
-  </div>
+  <app-navbar></app-navbar>
+</div>
+<div>
+  <router-outlet></router-outlet>
 </div>

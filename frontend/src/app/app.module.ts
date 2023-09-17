@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -11,6 +12,15 @@ import { OperationalreportsComponent } from './components/operationalreports/ope
 import { CompanynotamComponent } from './components/companynotam/companynotam.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
 import { EopComponent } from './components/eop/eop.component';
+import { ResourcesComponent } from './views/resources/resources.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ToolsComponent } from './views/tools/tools.component';
+
+const appRoute: Routes = [
+  {path: '', redirectTo: 'resources', pathMatch: 'full'},
+  {path: 'resources', component: ResourcesComponent},
+  {path: 'tools', component: ToolsComponent}
+]
 
 @NgModule({
   declarations: [
@@ -22,11 +32,15 @@ import { EopComponent } from './components/eop/eop.component';
     OperationalreportsComponent,
     CompanynotamComponent,
     ScheduleComponent,
-    EopComponent
+    EopComponent,
+    ResourcesComponent,
+    NavbarComponent,
+    ToolsComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    RouterModule.forRoot(appRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
